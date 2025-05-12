@@ -131,6 +131,9 @@
     .counter-box:hover {
       transform: scale(1.05);
     }
+      #footerOptions {
+    transition: max-height 0.3s ease;
+ 	 }
     #actionButtons {
       position: fixed;
       bottom: 0;
@@ -233,42 +236,82 @@
     <h1>Bingo Familiar</h1>
     <div id="setupForm" class="mb-3">
       <input type="text" id="playerName" class="form-control mb-2" placeholder="Ingresa tu nombre" />
-      <select id="playerAvatar" class="form-select mb-2">
-        <option value="🇵🇾">🇵🇾 Paraguay</option>
-        <option value="🎯">🎯 Blanco</option>
-        <option value="🐱">🐱 Gato</option>
-        <option value="🐶">🐶 Perro</option>
-        <option value="🦄">🦄 Unicornio</option>
-        <option value="👾">👾 Alien</option>
-        <option value="🎲">🎲 Dado</option>
-        <option value="🐸">🐸 Rana</option>
-        <option value="🚀">🚀 Navegante</option>
-        <option value="🏆">🏆 Campeón</option>
-        <option value="🧙‍♂️">🧙‍♂️ Mago</option>
-        <option value="🧟">🧟 Zombi</option>
-        <option value="🧛‍♀️">🧛‍♀️ Vampira</option>
-        <option value="🎃">🎃 Calabaza</option>
-        <option value="🧞">🧞 Genio</option>
-        <option value="👑">👑 Rey</option>
-        <option value="👸">👸 Reina</option>
-        <option value="🕵️">🕵️ Detective</option>
-        <option value="🤖">🤖 Robot</option>
-        <option value="🐉">🐉 Dragón</option>
-        <option value="🌈">🌈 Arcoíris</option>
-        <option value="💀">💀 Calavera</option>
-        <option value="🐯">🐯 Tigre</option>
-        <option value="🦁">🦁 León</option>
-        <option value="🐼">🐼 Panda</option>
-        <option value="🐨">🐨 Koala</option>
-        <option value="🐵">🐵 Mono</option>
-        <option value="🐷">🐷 Cerdito</option>
-        <option value="🐰">🐰 Conejo</option>
-        <option value="🐘">🐘 Elefante</option>
-        <option value="🦊">🦊 Zorro</option>
-        <option value="🦉">🦉 Búho</option>
-        <option value="🦓">🦓 Cebra</option>
-        <option value="🐮">🐮 Vaca</option>
-      </select>
+	<select id="playerAvatar" class="form-select mb-2">
+	  <!-- 🇵🇾 Nacionales -->
+	  <option value="🇵🇾">🇵🇾 Paraguay</option>
+
+	  <!-- 🧑 Profesiones y personajes -->
+	  <option value="🪖">🪖 Soldado</option>
+	  <option value="🧑‍🚀">🧑‍🚀 Astronauta</option>
+	  <option value="🧑‍🍳">🧑‍🍳 Chef</option>
+	  <option value="🧑‍🏫">🧑‍🏫 Profesor</option>
+	  <option value="🧑‍🎨">🧑‍🎨 Artista</option>
+	  <option value="🧑‍⚕️">🧑‍⚕️ Doctor</option>
+	  <option value="🧑‍🚒">🧑‍🚒 Bombero</option>
+	  <option value="🧑‍🌾">🧑‍🌾 Granjero</option>
+	  <option value="🧑‍✈️">🧑‍✈️ Piloto</option>
+	  <option value="🕵️">🕵️ Detective</option>
+
+	  <!-- 🧙 Fantasía -->
+	  <option value="🧙‍♂️">🧙‍♂️ Mago</option>
+	  <option value="🧙">🧙 Hechicero</option>
+	  <option value="🧚">🧚 Hada</option>
+	  <option value="🧝">🧝 Elfo</option>
+	  <option value="🧛‍♀️">🧛‍♀️ Vampira</option>
+	  <option value="🧛">🧛 Vampiro</option>
+	  <option value="🧞">🧞 Genio</option>
+	  <option value="🧞‍♂️">🧞‍♂️ Genio Azul</option>
+	  <option value="🧟">🧟 Zombi</option>
+	  <option value="🧟‍♂️">🧟‍♂️ Zombi Hombre</option>
+	  <option value="🧜">🧜 Sirena</option>
+	  <option value="🎃">🎃 Calabaza</option>
+	  <option value="🐉">🐉 Dragón</option>
+	  <option value="🌈">🌈 Arcoíris</option>
+
+	  <!-- 🦸 Superhéroes -->
+	  <option value="🦸‍♂️">🦸‍♂️ Superhéroe</option>
+	  <option value="🦹‍♀️">🦹‍♀️ Villana</option>
+
+	  <!-- 👑 Realeza -->
+	  <option value="👑">👑 Rey</option>
+	  <option value="👸">👸 Reina</option>
+
+	  <!-- 🐾 Animales -->
+	  <option value="🐱">🐱 Gato</option>
+	  <option value="🐶">🐶 Perro</option>
+	  <option value="🐸">🐸 Rana</option>
+	  <option value="🐯">🐯 Tigre</option>
+	  <option value="🦁">🦁 León</option>
+	  <option value="🐼">🐼 Panda</option>
+	  <option value="🐨">🐨 Koala</option>
+	  <option value="🐵">🐵 Mono</option>
+	  <option value="🐷">🐷 Cerdito</option>
+	  <option value="🐰">🐰 Conejo</option>
+	  <option value="🐘">🐘 Elefante</option>
+	  <option value="🦊">🦊 Zorro</option>
+	  <option value="🦉">🦉 Búho</option>
+	  <option value="🦓">🦓 Cebra</option>
+	  <option value="🐮">🐮 Vaca</option>
+	  <option value="🦝">🦝 Mapache</option>
+	  <option value="🦔">🦔 Erizo</option>
+	  <option value="🐙">🐙 Pulpo</option>
+	  <option value="🦩">🦩 Flamenco</option>
+	  <option value="🐿️">🐿️ Ardilla</option>
+	  <option value="🦄">🦄 Unicornio</option>
+
+	  <!-- 🎮 Otros divertidos -->
+	  <option value="🎯">🎯 Blanco</option>
+	  <option value="🎲">🎲 Dado</option>
+	  <option value="🚀">🚀 Navegante</option>
+	  <option value="🏆">🏆 Campeón</option>
+	  <option value="💀">💀 Calavera</option>
+	  <option value="🤖">🤖 Robot</option>
+	  <option value="🎩">🎩 Sombrero</option>
+	  <option value="👓">👓 Nerd</option>
+	  <option value="🕶️">🕶️ Cool</option>
+	  <option value="🧢">🧢 Cachucha</option>
+	</select>
+
     </div>
     <button id="addCardBtn" class="btn btn-primary mb-3" onclick="startGame()">Agregar cartón</button>
     <h3 id="playerTitle" class="mb-3 d-flex justify-content-center align-items-center gap-2"></h3>
@@ -280,13 +323,15 @@
     ❌ Perdidos: <span class="count">0</span>
   </div>
 </div>
-    <div class="mb-3 d-none" id="actionButtons">
+<div id="footerButtons" class="fixed-bottom bg-light text-center py-2">
+<button id="toggleFooter" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-3" style="z-index: 1050; width: 60px; height: 60px;">  ☰ </button>
+	<div class="mb-3" id="actionButtons" style="display: none;">
       <button class="btn btn-secondary" onclick="clearAllCards()"> 🗑️ Eliminar todos los cartones</button>
       <button class="btn btn-success" onclick="resetVictories()"> 🔄 Reiniciar victorias</button>
       <button class="btn btn-danger" onclick="resetLosses()">🔄 Reiniciar perdidos</button>
       <!--<button class="btn btn-warning" onclick="checkAllCards()">Verificar todos los cartones</button>-->
     </div>
-
+</div>
     <div id="cardsContainer" class="row mt-4"></div>
   </div>
 
@@ -323,7 +368,14 @@
 
       generateBingoCard();
     }
-
+  document.getElementById('toggleFooter').addEventListener('click', function () {
+    const footer = document.getElementById('actionButtons');
+    if (footer.style.display === 'none' || footer.classList.contains('d-none')) {
+      footer.style.display = 'flex'; // Muestra los botones
+    } else {
+      footer.style.display = 'none'; // Oculta los botones
+    }
+  });
     function generateColumn(start, end) {
       const range = Array.from({length: end - start + 1}, (_, i) => start + i);
       const sample = [];
